@@ -19,3 +19,6 @@ EXPOSE 8080
 
 # Start app with gunicorn
 CMD ["gunicorn", "main:app", "--bind", "0.0.0.0:8080"]
+
+RUN pip install -U yt-dlp
+
